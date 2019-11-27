@@ -102,7 +102,7 @@
         {
             cell.textLabel.text = @"initScanner";
             
-            cell.detailTextLabel.text = [[HTScanner shareInstance] isLicenseValid]?@"License Valid":@"License Invalid";
+            cell.detailTextLabel.text = [[HTScanner sharedInstance] isLicenseValid]?@"License Valid":@"License Invalid";
         }
             break;
         case 1:
@@ -119,7 +119,7 @@
                         _switch0.on = NO;
                         cell.accessoryView = _switch0;
                     }
-                    _switch0.enabled = [[HTScanner shareInstance] isLicenseValid];
+                    _switch0.enabled = [[HTScanner sharedInstance] isLicenseValid];
                 }
                     break;
                 case 1:
@@ -133,7 +133,7 @@
                         _switch1.on = YES;
                         cell.accessoryView = _switch1;
                     }
-                    _switch1.enabled = [[HTScanner shareInstance] isLicenseValid];
+                    _switch1.enabled = [[HTScanner sharedInstance] isLicenseValid];
                 }
                     break;
                 case 2:
@@ -147,7 +147,7 @@
                         _switch2.on = YES;
                         cell.accessoryView = _switch2;
                     }
-                    _switch2.enabled = [[HTScanner shareInstance] isLicenseValid];
+                    _switch2.enabled = [[HTScanner sharedInstance] isLicenseValid];
                 }
                     break;
                 case 3:
@@ -161,7 +161,7 @@
                         _switch3.on = YES;
                         cell.accessoryView = _switch3;
                     }
-                    _switch3.enabled = [[HTScanner shareInstance] isLicenseValid];
+                    _switch3.enabled = [[HTScanner sharedInstance] isLicenseValid];
                 }
                     break;
                 default:
@@ -204,7 +204,7 @@
     {
         case 0:
         {
-            NSInteger suc = [[HTScanner shareInstance] initScanner:_textView.text];
+            NSInteger suc = [[HTScanner sharedInstance] initScanner:_textView.text];
             [self.tableView reloadData];
             _tipLabel.text = [NSString stringWithFormat:@"init License success:%@",@(suc)];
         }
@@ -214,12 +214,12 @@
             typeof(self) __weak weakSelf = self;
             if (indexPath.row == 0)
             {
-                [[HTScanner shareInstance] setUIConfig:HTScannerCapturePage configID:HTScannerCapturePageSetMultiPages param:@(_switch0.isOn)];
-                [[HTScanner shareInstance] setUIConfig:HTScannerCapturePage configID:HTScannerCapturePageShowMultiPages param:@(_switch1.isOn)];
-                [[HTScanner shareInstance] setUIConfig:HTScannerCapturePage configID:HTScannerCapturePageSetAutoCapture param:@(_switch2.isOn)];
-                [[HTScanner shareInstance] setUIConfig:HTScannerCapturePage configID:HTScannerCapturePageShowAutoCapture param:@(_switch3.isOn)];
+                [[HTScanner sharedInstance] setUIConfig:HTScannerCapturePage configID:HTScannerCapturePageSetMultiPages param:@(_switch0.isOn)];
+                [[HTScanner sharedInstance] setUIConfig:HTScannerCapturePage configID:HTScannerCapturePageShowMultiPages param:@(_switch1.isOn)];
+                [[HTScanner sharedInstance] setUIConfig:HTScannerCapturePage configID:HTScannerCapturePageSetAutoCapture param:@(_switch2.isOn)];
+                [[HTScanner sharedInstance] setUIConfig:HTScannerCapturePage configID:HTScannerCapturePageShowAutoCapture param:@(_switch3.isOn)];
                 
-                NSInteger suc = [[HTScanner shareInstance] startScanWithViewController:self completion:^(BOOL finsish, HTScannerProject * _Nonnull project) {
+                NSInteger suc = [[HTScanner sharedInstance] startScanWithViewController:self completion:^(BOOL finsish, HTScannerProject * _Nonnull project) {
                     weakSelf.project = project;
                 }];
                 if (suc != 0)
@@ -237,7 +237,7 @@
             break;
         case 3:
         {
-            NSInteger suc = [[HTScanner shareInstance] displaySettingsPageWithNavigationController:self.navigationController];
+            NSInteger suc = [[HTScanner sharedInstance] displaySettingsPageWithNavigationController:self.navigationController];
             if (suc != 0)
             {
                 [self showInvalidAlert];

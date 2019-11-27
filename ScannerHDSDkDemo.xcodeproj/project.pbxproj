@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		549D1F4A298B8EF1D905D92D /* libPods-ScannerHDSDkDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5716D4C6E4BD6F849E0597A8 /* libPods-ScannerHDSDkDemo.a */; };
+		FC102DCC238E5DA3007AED1C /* ScannerHDSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCA5B8F8237E8295003D00DF /* ScannerHDSDK.framework */; };
 		FC6647F8237D5342005416DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6647F7237D5342005416DE /* AppDelegate.m */; };
 		FC664800237D5345005416DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC6647FF237D5345005416DE /* Assets.xcassets */; };
 		FC664806237D5345005416DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC664805237D5345005416DE /* main.m */; };
 		FC6AE1A72382916700D49055 /* ScannerHDSDKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FC6AE1A62382916700D49055 /* ScannerHDSDKResource.bundle */; };
 		FCA5B8EB237E4E8A003D00DF /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FCA5B8EA237E4E8A003D00DF /* libbz2.tbd */; };
 		FCD7B97D23865F4A0081EC9C /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD7B97C23865F4A0081EC9C /* TableViewController.m */; };
-		FCF4B08C238D24AD00C692DD /* ScannerHDSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCA5B8F8237E8295003D00DF /* ScannerHDSDK.framework */; };
 		FCF4B090238D24CB00C692DD /* VisionSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF4B08D238D24CB00C692DD /* VisionSDK.framework */; };
 		FCF4B091238D24CB00C692DD /* HXBussinessCardScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF4B08E238D24CB00C692DD /* HXBussinessCardScanner.framework */; };
 		FCF4B092238D24CB00C692DD /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF4B08F238D24CB00C692DD /* opencv2.framework */; };
@@ -57,11 +57,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC102DCC238E5DA3007AED1C /* ScannerHDSDK.framework in Frameworks */,
 				FCF4B090238D24CB00C692DD /* VisionSDK.framework in Frameworks */,
 				FCF4B091238D24CB00C692DD /* HXBussinessCardScanner.framework in Frameworks */,
 				FCF4B092238D24CB00C692DD /* opencv2.framework in Frameworks */,
 				FCA5B8EB237E4E8A003D00DF /* libbz2.tbd in Frameworks */,
-				FCF4B08C238D24AD00C692DD /* ScannerHDSDK.framework in Frameworks */,
 				549D1F4A298B8EF1D905D92D /* libPods-ScannerHDSDkDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
