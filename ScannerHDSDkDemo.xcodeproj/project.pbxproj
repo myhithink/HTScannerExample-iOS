@@ -15,9 +15,6 @@
 		FC6AE1A72382916700D49055 /* ScannerHDSDKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FC6AE1A62382916700D49055 /* ScannerHDSDKResource.bundle */; };
 		FCA5B8EB237E4E8A003D00DF /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FCA5B8EA237E4E8A003D00DF /* libbz2.tbd */; };
 		FCD7B97D23865F4A0081EC9C /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD7B97C23865F4A0081EC9C /* TableViewController.m */; };
-		FCF4B090238D24CB00C692DD /* VisionSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF4B08D238D24CB00C692DD /* VisionSDK.framework */; };
-		FCF4B091238D24CB00C692DD /* HXBussinessCardScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF4B08E238D24CB00C692DD /* HXBussinessCardScanner.framework */; };
-		FCF4B092238D24CB00C692DD /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF4B08F238D24CB00C692DD /* opencv2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,9 +44,6 @@
 		FCA5B8F8237E8295003D00DF /* ScannerHDSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ScannerHDSDK.framework; sourceTree = "<group>"; };
 		FCD7B97B23865F4A0081EC9C /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		FCD7B97C23865F4A0081EC9C /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
-		FCF4B08D238D24CB00C692DD /* VisionSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VisionSDK.framework; path = ../Framework/VisionSDK/VisionSDK.framework; sourceTree = "<group>"; };
-		FCF4B08E238D24CB00C692DD /* HXBussinessCardScanner.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HXBussinessCardScanner.framework; path = ../Framework/VisionSDK/HXBussinessCardScanner.framework; sourceTree = "<group>"; };
-		FCF4B08F238D24CB00C692DD /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../Framework/VisionSDK/opencv2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +52,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC102DCC238E5DA3007AED1C /* ScannerHDSDK.framework in Frameworks */,
-				FCF4B090238D24CB00C692DD /* VisionSDK.framework in Frameworks */,
-				FCF4B091238D24CB00C692DD /* HXBussinessCardScanner.framework in Frameworks */,
-				FCF4B092238D24CB00C692DD /* opencv2.framework in Frameworks */,
 				FCA5B8EB237E4E8A003D00DF /* libbz2.tbd in Frameworks */,
 				549D1F4A298B8EF1D905D92D /* libPods-ScannerHDSDkDemo.a in Frameworks */,
 			);
@@ -81,9 +72,6 @@
 		993C119F691EF66BA81735E2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FCF4B08E238D24CB00C692DD /* HXBussinessCardScanner.framework */,
-				FCF4B08F238D24CB00C692DD /* opencv2.framework */,
-				FCF4B08D238D24CB00C692DD /* VisionSDK.framework */,
 				FC6AE1A62382916700D49055 /* ScannerHDSDKResource.bundle */,
 				FCA5B8F8237E8295003D00DF /* ScannerHDSDK.framework */,
 				FCA5B8EA237E4E8A003D00DF /* libbz2.tbd */,

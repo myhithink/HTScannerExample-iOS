@@ -17,4 +17,5 @@ target 'ScannerHDSDkDemo' do
   pod 'AFNetworking', '3.0'
   pod 'WCDB'
   pod 'OpenSSL-Universal'
+  pod 'OpenCV','3.4.5'
 end
